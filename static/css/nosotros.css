@@ -66,3 +66,31 @@ span{
   }
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    margin: 100px 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  iframe {
+    margin-left: 0;
+  }
+
+  .button {
+    margin: 5% 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2:hover {
+    padding: 5px;
+  }
+
+  .button {
+    margin: 5% 5%;
+  }
+}

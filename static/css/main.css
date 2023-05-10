@@ -49,6 +49,14 @@ body{
     text-decoration: none;
     position: relative;
   }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      padding: 20px 0;
+    }
+  }
 
   /* baner */
   .banner {
@@ -193,7 +201,13 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-
+@media (max-width: 768px) {
+  .containers {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -253,6 +267,8 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -302,6 +318,8 @@ h2 {
 @media screen and (min-width: 768px) {
   .card-productos {
     width: calc(50% - 5px);
+    flex-direction: row;
+    align-items: stretch;
   }
   
   .card-info {
@@ -312,12 +330,15 @@ h2 {
 @media screen and (min-width: 992px) {
   .card-productos {
     width: calc(33.33% - 10px);
+    flex-direction: row;
+    align-items: stretch;
   }
   
   .card-info {
     margin-left: 20px;
   }
 }
+
 
 /* acerca de */
 .acerca-de {
@@ -620,3 +641,7 @@ contacto */
 
 
 
+@media screen and (max-width: 768px) {
+  main {
+    margin: 100px 20px;
+  }}
