@@ -1,0 +1,68 @@
+css.nosotros.css
+/*etiquetas*/
+div .animate__animated {
+  animation-duration: 3s;
+  animation-delay: 0.3s;
+}
+
+h2:hover {
+  animation-duration: 3s;
+  animation-name: cambioColor;
+  border: solid 2px #F9A825;
+  padding: 10px;
+}
+
+iframe{
+  position:relative;
+  margin-left: 100px;
+}
+
+iframe:hover {
+  box-shadow: 10px 5px 5px grey;
+}
+
+main {
+    margin: 100px 50px;
+    font-family: Rubik;;
+}
+
+p {
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+}
+
+span{
+    color: #3498DB;
+}
+
+/*clases*/
+.button {
+  position: relative;
+  margin: 5% 25%;
+  background-color: #F9A825;
+  color:white;
+  padding: 10px;
+  border-radius:3px;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: space-evenly;
+    text-align: justify;
+    align-content: center;
+
+}
+
+@keyframes cambioColor {
+  from {
+    color: black;
+  }
+
+  to {
+    color:#3498DB ;
+  }
+}
+

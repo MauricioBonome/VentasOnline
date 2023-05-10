@@ -1,0 +1,207 @@
+/* Estilos del navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 15px;
+    z-index: 9999;
+    
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar-menu li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar-menu li a:hover {
+    text-decoration: none;
+    position: relative;
+  }
+  .navbar-menu li a:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #666;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  .navbar-toggle-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .navbar-toggle-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .navbar-toggle-icon span:nth-child(1) {
+    top: 0;
+  }
+  
+  .navbar-toggle-icon span:nth-child(2),
+  .navbar-toggle-icon span:nth-child(3) {
+    top: 8px;
+  }
+  
+  .navbar-toggle-icon span:nth-child(4) {
+    top: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-brand {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .navbar-toggle-icon {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    .navbar-toggle-icon span:nth-child(1),
+    .navbar-toggle-icon span:nth-child(4) {
+      top: 8px;
+    }
+  
+    .navbar-toggle-icon span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+  
+    .navbar-toggle-icon span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  
+    .navbar-menu-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      list-style: none;
+      padding: 0;
+    }
+  
+    .navbar-menu-mobile li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-menu-mobile li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 3px;
+      transition: all 0.2s ease-out;
+    }
+  
+    .navbar-menu-mobile li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+  @media (min-width: 768px) {
+    .navbar-menu-mobile {
+      display: none;
+    }
+  }
+
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  /* Estilos de los iconos de redes sociales */
+  .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Estilos de los iconos de redes sociales en hover */
+  .social-media a:hover {
+    color: gray;
+  }
+  
+  /* Estilos de los iconos de redes sociales de Facebook, Twitter y LinkedIn */
+  .fa-facebook-f {
+    color: #3b5998;
+  }
+  
+  .fa-twitter {
+    color: #00aced;
+  }
+  
+  .fa-linkedin-in {
+    color: #0077b5;
+  }
+  
+  .img-sm {
+    max-width: 100%;  /* Limitar el ancho al contenedor padre */
+    height: auto;  /* Mantener la relación de aspecto */
+}

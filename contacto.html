@@ -29,15 +29,15 @@
       </div>
       <ul class="navbar-menu">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Servicios</a></li>
+        <li><a href="store.html">Tienda </a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
      
       <ul class="navbar-menu-mobile">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Servicios</a></li>
+        <li><a href="store.html">Tienda</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
@@ -61,19 +61,19 @@
             <form onsubmit="return validarFormulario()" action="https://formsubmit.co/mauricio.bonome@gmail.com"   method="POST">
                 <div class="mb-3 ">
                   <label for="nombre" class="form-label">Nombre completo</label>
-                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
                 <div class="mb-3">
                   <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" pattern="[0-9]{10}">
+                  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" pattern="[0-9]{10}"required>
                 </div>
                 <div class="mb-3">
                   <label for="mensaje" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Ingrese su mensaje"required></textarea>
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary btn-lg" style="background-color: #34626c; border-color: #34626c;">Enviar</button>
@@ -92,7 +92,6 @@
     
     
   </main>
-  </body>
 
 
 
