@@ -86,13 +86,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
   }
-  .banner {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
+
   
   .banner img {
     width: 100%;
@@ -579,6 +573,8 @@ h2 {
   }
 
   .aside {
+
+    display: none;
     margin-right: 0;
     margin-bottom: 20px;
     width: 15%;
@@ -590,7 +586,7 @@ h2 {
   }
 }
 .container-grid {
-  margin-top: 300px;
+  margin-top: 50px;
   margin-bottom: 150px;
 }
 
@@ -643,5 +639,5 @@ contacto */
 
 @media screen and (max-width: 768px) {
   main {
-    margin: 100px 20px;
+    margin: 0px 20px;
   }}

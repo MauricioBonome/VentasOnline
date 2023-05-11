@@ -1,5 +1,9 @@
-css.nosotros.css
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+body{
+  font-family: "Rubik", sans-serif;
+}
 /*etiquetas*/
+
 div .animate__animated {
   animation-duration: 3s;
   animation-delay: 0.3s;
